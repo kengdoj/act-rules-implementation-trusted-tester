@@ -1,0 +1,1176 @@
+{
+  "@graph": [
+    {
+      "@context": {
+        "@vocab": "http://www.w3.org/TR/WCAG-EM/#",
+        "reporter": "https://github.com/w3c/wcag-em-report-tool/",
+        "wcagem": "http://www.w3.org/TR/WCAG-EM/#",
+        "WCAG2": "http://www.w3.org/TR/WCAG20/#",
+        "earl": "http://www.w3.org/ns/earl#",
+        "dct": "http://purl.org/dc/terms/",
+        "wai": "http://www.w3.org/WAI/",
+        "sch": "http://schema.org/",
+        "Evaluation": "wcagem:Evaluation",
+        "EvaluationScope": "wcagem:EvaluationScope",
+        "TestSubject": "earl:TestSubject",
+        "WebSite": "sch:WebSite",
+        "Sample": "wcagem:Sample",
+        "WebPage": "sch:WebPage",
+        "Technology": "WCAG2:technologydef",
+        "Assertion": "earl:Assertion",
+        "Assertor": "earl:Assertor",
+        "TestResult": "earl:TestResult",
+        "title": "dct:title",
+        "summary": "dct:summary",
+        "creator": {
+          "@id": "dct:creator",
+          "@type": "@id"
+        },
+        "date": "dct:date",
+        "commissioner": "wcagem:commissioner",
+        "reliedUponTechnology": "WCAG2:reliedupondef",
+        "evaluationScope": "step1",
+        "commonPages": "step2a",
+        "essentialFunctionality": "step2b",
+        "pageTypeVariety": "step2c",
+        "otherRelevantPages": "step2e",
+        "structuredSample": "step3a",
+        "randomSample": "step3b",
+        "auditResult": "step4",
+        "specifics": "step5b",
+        "publisher": {
+          "@id": "dct:publisher",
+          "@type": "@id"
+        },
+        "conformanceTarget": {
+          "@id": "step1b",
+          "@type": "@id"
+        },
+        "accessibilitySupportBaseline": "step1c",
+        "additionalEvalRequirement": "step1d",
+        "website": "WCAG2:set-of-web-pagesdef",
+        "siteScope": "step1a",
+        "siteName": "sch:name",
+        "webpage": "WCAG2:webpagedef",
+        "description": "dct:description",
+        "source": {
+          "@id": "dct:source",
+          "@type": "@id"
+        },
+        "tested": "reporter:blob/master/docs/EARL%2BJSON-LD.md#tested",
+        "test": {
+          "@id": "earl:test",
+          "@type": "@id"
+        },
+        "assertedBy": {
+          "@id": "earl:assertedBy",
+          "@type": "@id"
+        },
+        "subject": {
+          "@id": "earl:subject",
+          "@type": "@id"
+        },
+        "result": "earl:result",
+        "mode": {
+          "@id": "earl:mode",
+          "@type": "@id"
+        },
+        "hasPart": "dct:hasPart",
+        "outcome": {
+          "@id": "earl:outcome",
+          "@type": "@id"
+        },
+        "id": "@id",
+        "type": "@type",
+        "lang": "@language"
+      },
+      "type": "Evaluation",
+      "publisher": "reporter:releases/tag/1.1.0",
+      "lang": "en",
+      "evaluationScope": {
+        "type": "EvaluationScope",
+        "conformanceTarget": "wai:WCAG2AA-Conformance",
+        "additionalEvalRequirement": "",
+        "website": {
+          "type": [
+            "TestSubject",
+            "WebSite"
+          ],
+          "id": "_:website",
+          "siteName": "ACT-R Rule - Button has accessible name",
+          "siteScope": "https://act-rules.github.io/testcases/97a4e1/"
+        },
+        "accessibilitySupportBaseline": "<< Fill out >>"
+      },
+      "auditResult": [
+        {
+          "type": "Assertion",
+          "test": "WCAG2:text-equiv-all",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-av-only-alt",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-captions",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-audio-desc",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-real-time-captions",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-audio-desc-only",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-sign",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-extended-ad",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-text-doc",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:media-equiv-live-audio-only",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:content-structure-separation-programmatic",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:content-structure-separation-sequence",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:content-structure-separation-understanding",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-without-color",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-dis-audio",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-contrast",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-scale",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-text-presentation",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast7",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-noaudio",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-visual-presentation",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:visual-audio-contrast-text-images",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:keyboard-operation-keyboard-operable",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:keyboard-operation-trapping",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:keyboard-operation-all-funcs",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:time-limits-required-behaviors",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:time-limits-pause",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:time-limits-no-exceptions",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:time-limits-postponed",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:time-limits-server-timeout",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:seizure-does-not-violate",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:seizure-three-times",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-skip",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-title",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-focus-order",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-refs",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-mult-loc",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-descriptive",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-focus-visible",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-location",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-link",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:navigation-mechanisms-headings",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-doc-lang-id",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-other-lang-id",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-idioms",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-located",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-supplements",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:meaning-pronunciation",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:consistent-behavior-receive-focus",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:consistent-behavior-unpredictable-change",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:consistent-behavior-consistent-locations",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:consistent-behavior-consistent-functionality",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:consistent-behavior-no-extreme-changes-context",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-identified",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-cues",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-suggestions",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-reversible",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-context-help",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:minimize-error-reversible-all",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:ensure-compat-parses",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": []
+        },
+        {
+          "type": "Assertion",
+          "test": "WCAG2:ensure-compat-rsv",
+          "subject": "_:website",
+          "result": {
+            "description": "",
+            "outcome": "earl:untested"
+          },
+          "hasPart": [
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_0"
+              ],
+              "result": {
+                "date": "2019-11-26 11:00:34 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_1"
+              ],
+              "result": {
+                "date": "2019-11-26 11:01:13 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_2"
+              ],
+              "result": {
+                "date": "2019-11-26 11:01:44 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_3"
+              ],
+              "result": {
+                "date": "2019-11-26 11:02:31 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_4"
+              ],
+              "result": {
+                "date": "2019-11-27 10:57:38 -0500",
+                "outcome": "earl:inapplicable",
+                "description": "no button found"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_5"
+              ],
+              "result": {
+                "date": "2019-11-27 10:58:04 -0500",
+                "outcome": "earl:inapplicable",
+                "description": "no button found"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_6"
+              ],
+              "result": {
+                "date": "2019-11-26 11:04:41 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_7"
+              ],
+              "result": {
+                "date": "2019-11-26 11:05:15 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_8"
+              ],
+              "result": {
+                "date": "2019-11-26 11:05:40 -0500",
+                "outcome": "earl:passed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_9"
+              ],
+              "result": {
+                "date": "2019-11-26 11:06:15 -0500",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_10"
+              ],
+              "result": {
+                "date": "2019-11-26 11:07:32 -0500",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_11"
+              ],
+              "result": {
+                "date": "2019-11-26 11:07:57 -0500",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_12"
+              ],
+              "result": {
+                "date": "2019-11-26 11:08:22 -0500",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_13"
+              ],
+              "result": {
+                "date": "2019-11-26 11:08:50 -0500",
+                "outcome": "earl:inapplicable"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_14"
+              ],
+              "result": {
+                "date": "2019-11-26 11:14:10 -0500",
+                "description": "will confirm ANDI behavior for aria-hidden=true",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_15"
+              ],
+              "result": {
+                "date": "2019-11-26 11:12:45 -0500",
+                "outcome": "earl:inapplicable"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            },
+            {
+              "type": "Assertion",
+              "assertedBy": "_:evaluator",
+              "subject": [
+                "_:struct_16"
+              ],
+              "result": {
+                "date": "2019-11-26 11:14:03 -0500",
+                "description": "will confirm ANDI behavior for aria-hidden=true",
+                "outcome": "earl:failed"
+              },
+              "multiPage": false,
+              "mode": "earl:manual",
+              "testcase": "WCAG2:ensure-compat-rsv"
+            }
+          ]
+        }
+      ],
+      "creator": "_:evaluator",
+      "title": "Report for ACT-R Rule - Button has accessible name",
+      "commissioner": "ACT Rules Community Group",
+      "structuredSample": {
+        "webpage": [
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_0",
+            "description": "https://act-rules.github.io/testcases/97a4e1/3f1791e11d02c11f950a13172fc1c03d9e84f7cf.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/3f1791e11d02c11f950a13172fc1c03d9e84f7cf.html",
+            "title": "3f1791e11d02c11f950a13172fc1c03d9e84f7cf",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_1",
+            "description": "https://act-rules.github.io/testcases/97a4e1/d408cca4ab3468dde1dec3fb48e51c508cbb70d7.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/d408cca4ab3468dde1dec3fb48e51c508cbb70d7.html",
+            "title": "d408cca4ab3468dde1dec3fb48e51c508cbb70d7",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_2",
+            "description": "https://act-rules.github.io/testcases/97a4e1/104a9256c8e8b0752c43ae0821daf92c18781ce8.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/104a9256c8e8b0752c43ae0821daf92c18781ce8.html",
+            "title": "104a9256c8e8b0752c43ae0821daf92c18781ce8",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_3",
+            "description": "https://act-rules.github.io/testcases/97a4e1/83899857cdc304726341cea593e3f72efc7e22ee.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/83899857cdc304726341cea593e3f72efc7e22ee.html",
+            "title": "83899857cdc304726341cea593e3f72efc7e22ee",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_4",
+            "description": "https://act-rules.github.io/testcases/97a4e1/064ac1119c78804ee67d6fc4001b86279675466f.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/064ac1119c78804ee67d6fc4001b86279675466f.html",
+            "title": "064ac1119c78804ee67d6fc4001b86279675466f",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_5",
+            "description": "https://act-rules.github.io/testcases/97a4e1/46ceea6d3ce5a938db807802a3cd8914ce154c14.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/46ceea6d3ce5a938db807802a3cd8914ce154c14.html",
+            "title": "46ceea6d3ce5a938db807802a3cd8914ce154c14",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_6",
+            "description": "https://act-rules.github.io/testcases/97a4e1/cce47b593783fb76f84de37a53cd8af0f15a889f.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/cce47b593783fb76f84de37a53cd8af0f15a889f.html",
+            "title": "cce47b593783fb76f84de37a53cd8af0f15a889f",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_7",
+            "description": "https://act-rules.github.io/testcases/97a4e1/3378832ac24e2a6460efededb922a1355a1ccfba.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/3378832ac24e2a6460efededb922a1355a1ccfba.html",
+            "title": "3378832ac24e2a6460efededb922a1355a1ccfba",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_8",
+            "description": "https://act-rules.github.io/testcases/97a4e1/9cf07b4a24c6a3e24dd6093d967599518d26846a.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/9cf07b4a24c6a3e24dd6093d967599518d26846a.html",
+            "title": "9cf07b4a24c6a3e24dd6093d967599518d26846a",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_9",
+            "description": "https://act-rules.github.io/testcases/97a4e1/a6c40a95f261ac27993f8205d91f7f4540f91f23.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/a6c40a95f261ac27993f8205d91f7f4540f91f23.html",
+            "title": "a6c40a95f261ac27993f8205d91f7f4540f91f23",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_10",
+            "description": "https://act-rules.github.io/testcases/97a4e1/34247af6724ee7bcdc0a71e0def98d5410e7363e.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/34247af6724ee7bcdc0a71e0def98d5410e7363e.html",
+            "title": "34247af6724ee7bcdc0a71e0def98d5410e7363e",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_11",
+            "description": "https://act-rules.github.io/testcases/97a4e1/9cd3d7152dbd99cc60b83939ffb3003ab1a3d7de.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/9cd3d7152dbd99cc60b83939ffb3003ab1a3d7de.html",
+            "title": "9cd3d7152dbd99cc60b83939ffb3003ab1a3d7de",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_12",
+            "description": "https://act-rules.github.io/testcases/97a4e1/8eb7978d588ab8fd27918075581699ba3ec3d57e.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/8eb7978d588ab8fd27918075581699ba3ec3d57e.html",
+            "title": "8eb7978d588ab8fd27918075581699ba3ec3d57e",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_13",
+            "description": "https://act-rules.github.io/testcases/97a4e1/18536a16b216da886cf45842e7a16ffebf80af8c.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/18536a16b216da886cf45842e7a16ffebf80af8c.html",
+            "title": "18536a16b216da886cf45842e7a16ffebf80af8c",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_14",
+            "description": "https://act-rules.github.io/testcases/97a4e1/20901e2525d4f6c77476caacf41ec9d5c234a59a.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/20901e2525d4f6c77476caacf41ec9d5c234a59a.html",
+            "title": "20901e2525d4f6c77476caacf41ec9d5c234a59a",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_15",
+            "description": "https://act-rules.github.io/testcases/97a4e1/6cd354877d9f74fb27e250616b44abe1d70ed41e.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/6cd354877d9f74fb27e250616b44abe1d70ed41e.html",
+            "title": "6cd354877d9f74fb27e250616b44abe1d70ed41e",
+            "tested": false
+          },
+          {
+            "type": [
+              "TestSubject",
+              "WebPage"
+            ],
+            "id": "_:struct_16",
+            "description": "https://act-rules.github.io/testcases/97a4e1/e34c1f2a007d5711980c45f6051a3f2e52b66847.html",
+            "source": "https://act-rules.github.io/testcases/97a4e1/e34c1f2a007d5711980c45f6051a3f2e52b66847.html",
+            "title": "e34c1f2a007d5711980c45f6051a3f2e52b66847",
+            "tested": false
+          }
+        ]
+      },
+      "randomSample": {
+        "webpage": []
+      },
+      "reliedUponTechnology": [
+        {
+          "id": "http://www.w3.org/TR/html5/",
+          "type": "Technology",
+          "title": "HTML5"
+        }
+      ]
+    },
+    {
+      "@context": {
+        "@vocab": "http://xmlns.com/foaf/0.1/",
+        "id": "@id",
+        "type": "@type"
+      },
+      "id": "_:evaluator",
+      "type": "Person",
+      "name": "Kathy Eng"
+    }
+  ]
+}
